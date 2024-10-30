@@ -1,0 +1,91 @@
+---
+---
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  position: relative;
+}
+
+body:before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #363538;
+  opacity: 0.7;
+  z-index: 1;
+}
+
+video.bg-video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 0;
+}
+
+.lander-branding
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  z-index: 10;
+  top: 10vw;  
+}
+
+.lander-branding img
+{
+  max-width: 25%;
+  filter: drop-shadow(#363538 1rem 10px 10px);
+}
+
+.lander-content
+{
+  top: 15vw;  
+  display: block;
+  position: relative;
+  z-index: 10;
+  justify-items: center;
+}
+.lander-content p
+{
+  min-width: 50%;
+  max-width: 50%;
+  filter: drop-shadow(#363538 1rem 5px 5px);
+  font-size: x-large;
+  font-family: sans-serif;
+  font-style: italic;
+  font-weight: bold;  
+}
+
+@media (min-width: 992px) {
+  .lander-branding
+  {
+   top: 5vw;
+  }
+  .lander-content
+  {
+    top: 10vw;
+  }  
+}
+
+.lander-footer
+{
+  position: absolute;
+  right: 2vw;
+  bottom: 2vw;
+  z-index: 1;
+  color: #FFFFFF;
+  opacity: 0.5;
+}

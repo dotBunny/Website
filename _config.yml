@@ -1,0 +1,23 @@
+# Local testing can be done by using 'bundle exec jekyll serve'.
+# - Site settings {{ site.* }}
+
+sass:
+    style: compressed
+title: dotBunny
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://dotbunny.com" # the base hostname & protocol for your site, e.g. http://example.com
+
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - CNAME
+  - LICENSE
