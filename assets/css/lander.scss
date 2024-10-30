@@ -60,13 +60,12 @@ video.bg-video {
 }
 .lander-content p
 {
-  min-width: 50%;
-  max-width: 50%;
+  min-width: 90%;
+  max-width: 90%;
   filter: drop-shadow(#363538 1rem 5px 5px);
-  font-size: x-large;
+  font-size: large;
   font-family: sans-serif;
   font-style: italic;
-  font-weight: bold;  
 }
 
 @media (min-width: 992px) {
@@ -77,6 +76,15 @@ video.bg-video {
   .lander-content
   {
     top: 10vw;
+  }
+  .lander-content p
+  {
+    min-width: 50%;
+    max-width: 50%;
+    font-size: x-large;
+    font-family: sans-serif;
+    font-style: italic;
+    font-weight: bold;  
   }  
 }
 
