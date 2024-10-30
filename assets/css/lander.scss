@@ -90,9 +90,11 @@ video.bg-video {
 
 .lander-footer
 {
-  position: absolute;
-  right: 2vw;
-  bottom: 2vw;
+  position: relative;
+  width: 100%;
+  padding-right: 5%;
+  text-align: right;
+  top: 15vw;
   z-index: 1;
   color: #FFFFFF;
   opacity: 0.5;
